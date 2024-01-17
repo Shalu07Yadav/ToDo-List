@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Todo app</title>
+    <style>
+        #main-heading{
+            text-align: center;
+        }
+        #ipt{
+            position: relative;
+            left: 30%;
+        }
+        #date{
+            position: relative;
+            left: 32%;
+        }
+        #add{
+           position: relative;
+           left: 34%;
+           height: 28px;
+           width: 80px;
+           background-color: green;
+           color: black;
+           border-radius: 7px ;
+           color: white;
+           cursor: pointer;
+           border: none;
+        }
+        .todo-container{
+            display: grid;
+            grid-template-columns: 200px  100px;
+            position: relative;
+            left: 32%;
+            padding: 30px;
+            row-gap: 10px;
+        }
+        .btn-todo{
+            background-color: red;
+            height: 28px;
+           width: 80px;
+          border-radius: 7px;
+          color: white;
+          cursor: pointer;
+          border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">Todo List</h1>
+  <input id="ipt" type="text" placeholder="Add Items">
+   <input id="date" type="date">
+  <button id="add" onclick="addToDo();">Add</button>
+  <div class="todo-container"></div>
+  <!-- <p id="todo-items"></p> -->
+
+<script src="todo.js"></script>
+</body>
+</html>
